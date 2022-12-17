@@ -7,14 +7,15 @@ local hide_in_width = function()
   return vim.fn.winwidth(0) > 80
 end
 
-local diagnosticss = {
-  "diagnostics",
-  sources = { "nvim_diagnostic" },
-  sections = { "error", "warn" },
-  symbols = { error = " ", warn = " " },
-  colored = false,
-  always_visible = true,
-}
+-- When ever you want to use this , just replace the table in section c  
+-- local diagnostics = {
+--   "diagnostics",
+--   sources = { "nvim_diagnostic" },
+--   sections = { "error", "warn" },
+--   symbols = { error = " ", warn = " " },
+--   colored = false,
+--   always_visible = true,
+-- }
 
 local diff = {
   "diff",
