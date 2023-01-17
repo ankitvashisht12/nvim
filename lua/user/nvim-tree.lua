@@ -15,6 +15,10 @@ nvim_tree.setup {
     enable = true,
     update_cwd = true,
   },
+  filters = {
+    dotfiles = false,
+    custom = { '^.git$' }
+  },
   renderer = {
     root_folder_modifier = ":t",
     icons = {
@@ -55,7 +59,7 @@ nvim_tree.setup {
   },
   view = {
     width = 30,
-    side = "left",
+    side = "right",
     mappings = {
       list = {
         { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
